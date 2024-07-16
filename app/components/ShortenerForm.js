@@ -12,10 +12,10 @@ const ShortenerForm = ({ onSubmit }) => {
         <form onSubmit={handleSubmit} className="flex flex-col items-center">
             <input
                 type="url"
+                className="p-2 border rounded text-black"
                 value={url}
                 onChange={(e) => setUrl(e.target.value)}
                 placeholder="Enter URL"
-                className="p-2 border rounded"
             />
             <button type="submit" className="mt-2 p-2 bg-blue-500 text-white rounded">
                 Shorten URL
